@@ -1,0 +1,20 @@
+algorithm = NMEEFSDR 
+inputData = "./data/in/Exp1/b0-real-tra.dat" "./data/in/Exp1/b0-real-tra.dat" "./data/in/Exp1/b0-real-tst.dat"
+
+outputData = "./data/output/output_nmeefsdr/exp1-b0-lab7.tra" "./data/output/output_nmeefsdr/exp1-b0-lab7.tst" "./data/output/output_nmeefsdr/exp1-b0-lab7-tra_reg.txt" "./data/output/output_nmeefsdr/exp1-b0-lab7-tra_qua.txt" "./data/output/output_nmeefsdr/exp1-b0-lab7-tra_seg.txt" "./data/output/output_nmeefsdr/exp1-b0-lab7-tst_quac.txt"
+
+seed = 160271
+nLabels = 7
+nEval = 10000
+popLength = 100
+crossProb = 0.6
+mutProb = 0.1
+minCnf = 0.2
+minUnus = 0.0
+onePerClass = YES
+ReInitCob = yes
+porcCob = 0.5
+Obj1 = unus
+Obj2 = sens
+Obj3 = null
+    

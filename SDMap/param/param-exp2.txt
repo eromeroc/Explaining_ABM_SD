@@ -1,0 +1,13 @@
+algorithm = SDMap
+inputData = "./data/in/Exp2/b0-int-tra.dat" "./data/in/Exp2/b0-int-tra.dat" "./data/in/Exp2/b0-int-tst.dat"
+outputData = "./data/output/output_sdmap/exp2-b0.tra" "./data/output/output_sdmap/exp2-b0.tst" "./data/output/output_sdmap/exp2-b0-rules.txt"  "./data/output/output_sdmap/exp2-b0-measures.txt"
+
+MinimumSupport = 0.05
+SubgroupReturn = 1000
+SubgroupPerClasses = true
+NumMaxSelectors = 10
+MinimumQuality = 0
+QualityFunction = WRAcc
+
+
+
