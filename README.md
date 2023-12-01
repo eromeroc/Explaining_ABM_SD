@@ -8,7 +8,7 @@ This repository contains the necessary resources for the experimental part of th
 ## Repository Structure
 
 -   **data**: This directory holds the dataset used for the experiments, provided by the company Zio.
--   **preprocessing**: R scripts for data preprocessing are stored here.
+-   **preprocessing**: R scripts for data preprocessing.
 -   **SDMap**: JAR file and parameter settings for SDMap algorithm.
 -   **NMEEFSD**: JAR file and parameter settings for NMEEFSD algorithm.
 -   **FuGePSD**: JAR file and parameter settings for FuGePSD algorithm.
