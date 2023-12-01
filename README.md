@@ -10,7 +10,7 @@ This repository contains the necessary resources for the experimental part of th
 -   **data**: This directory holds the dataset used for the experiments, provided by the company Zio.
 -   **preprocessing**: R scripts for data preprocessing.
 -   **SDMap**: JAR file and parameter settings for SDMap algorithm.
--   **NMEEFSD**: JAR file and parameter settings for NMEEFSD algorithm.
+-   **NMEEFSDR**: JAR file and parameter settings for NMEEFSDR algorithm.
 -   **FuGePSD**: JAR file and parameter settings for FuGePSD algorithm.
 
 ## Usage
@@ -27,7 +27,7 @@ Prepare the data for subgroup discovery algorithms by employing the R scripts fo
 
 ### Subgroup Discovery Algorithms
 
-Before applying subgroup discovery algorithms, ensure that your data adheres to the Attribute-Relation File Format (ARFF). The repository includes the following subgroup discovery algorithms: SDMap, FuGePSD, and NMEEFSD.
+Before applying subgroup discovery algorithms, ensure that your data adheres to the Attribute-Relation File Format (ARFF). The repository includes the following subgroup discovery algorithms: SDMap, FuGePSD, and NMEEFSDR.
 
 **Execution:** Streamline the execution of each algorithm with their respective `run_[algorithm].sh` script. These scripts are configured to conduct all four experiments with their corresponding configurations. Users can customize the execution settings by modifying the parameter files located in the `./[Algorithm]/param` directory.
 
