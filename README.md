@@ -49,5 +49,5 @@ If you use the resources in this repository, please cite this paper as:
 @article{Romero_ExplainingABM,
 author = {E. Romero and C. J. Carmona and O. Cord{\'o}n and M. J. del Jesus and S. Damas and  M. Chica},
 title = {Explaining Agent-based Modeling Outputs Using Subgroup Discovery: A Case Study in Marketing},
-note = {Submited to Applied Soft Computing}}
+note = {Submited}}
 ```
