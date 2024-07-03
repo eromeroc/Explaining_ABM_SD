@@ -47,13 +47,9 @@ if (length(args) >= 2) {
 ini.week <- 0
 fin.week <- 156
 brand <- 0
-# Select the events to be used as input variables
-select.events <- c("Bought", "Talk Awareness", "Listen Awareness",
-                   "TP 1$","TP 2","TP 3","TP 4","TP 7","TP 8","TP 9","TP 13","TP 15","TP 18")
 
 
-
-fraw <- paste0("./data/raw/agents_log_b", brand)
+fraw <- paste0("./data/raw/agents_log")
 fpath <- paste0("./data/in/Exp", exp,"/")
 freadme <- paste0(fpath,"exp",exp,"_readme.txt")
 fname <- paste0(fpath, "b", brand)
@@ -71,17 +67,13 @@ if (!dir.exists(fpath)) {
 dt_parts <- list()
 
 for (i in 1:5) {
-  file_name <- paste0(fraw, "_part", i, ".csv")
+  file_name <- paste0(fraw, "_part_", i, ".csv")
   dt_parts[[i]] <- read.csv(file_name)
 }
 
 data <- rbindlist(dt_parts)
 table.cats <- data.table()  
 
-
-# Select events and brand
-data <- select_events(data, select.events)
-#data <- select_brand(data, brand)
 
 # Calculate the sum of columns for each row
 cols <- paste("W.",ini.week:fin.week, sep = "")
@@ -151,9 +143,10 @@ write.table(data.disc, file = paste0(fname,"-int.csv"), sep = ",",
 
 
 # Create a readme file
+events <- setdiff(names(data.proc), c("Agent.ID", "Sales"))
 str.readme <- paste(" Experimento", exp, "- Nclases", ncat.class,
                     "- Semanas",ini.week,"-", fin.week, "- Eventos:",
-                    paste0(select.events,collapse= ","))
+                    paste0(events,collapse= ","))
 
 write_readme(paste0(fpath,"exp",exp,"_readme.txt"), str.readme)
 write.table(table.cats, file = paste0(fname,"-cats.txt"), sep = "\t",

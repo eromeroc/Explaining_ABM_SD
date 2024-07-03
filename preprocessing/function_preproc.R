@@ -7,42 +7,6 @@
 # Description: This script contains the necessary functions for data preprocessing
 
 
-#' Select events from the Action.State column
-#'
-#' This function filters rows in the input data table based on the specified
-#' events in the Action.State column.
-#'
-#' @param data A data table containing the original data.
-#' @param selected_events A character vector of events to select.
-#' @return A data table with filtered rows.
-select_events <- function(data, select.events){
-  
-  # Select events based on a list of event names
-  str.select <- paste(select.events, collapse="|")
-  data <- data[like(data$Action.State, str.select)]
-  
-  # Remove extra white spaces in the Action.State column
-  data[, ':='(Action.State = gsub('\\s+', '', data$Action.State))]
-  
-  return(data)
-}
-
-
-#' Select brand
-#'
-#' This function filters rows in the input data table based on the specified brand.
-#'
-#' @param data A data table containing the original data.
-#' @param brand An integer value representing the brand to select.
-#' @return A data table with filtered rows.
-select_brand <- function(data, brand){
-
-  data <- data[Brand == paste0("Brand ", brand)]
-  data[,':='(Brand=NULL)]    
-    
-  return(data)
-}
-
 
 #' Discretize Bought column
 #'
