@@ -17,7 +17,7 @@ This repository contains the necessary resources for the experimental part of th
 
 ### Data Preprocessing
 
-Prepare the data for subgroup discovery algorithms by employing the R scripts found in the `preprocessing_scripts` directory. These scripts manage event selection, brand filtering, class construction, and discretization.
+Prepare the data for subgroup discovery algorithms by employing the R scripts found in the `preprocessing_scripts` directory. These scripts handle the construction and discretization of input variables and class.
 
 **Execution:** Streamline the execution of data preprocessing with the `run_preprocessing.sh` script. This script is configured to conduct all four experiments with their respective settings, as comprehensively detailed in our paper. Alternatively, users can employ the R script `./preprocessing/main_preprocessing.R` with customized settings.
 
