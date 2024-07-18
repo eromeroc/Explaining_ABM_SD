@@ -46,8 +46,7 @@ We would like to express our gratitude to [Zio](https://www.zio-analytics.com/) 
 If you use the resources in this repository, please cite this paper as:
 
 ``` bibtex
-@article{Romero_ExplainingABM,
-author = {E. Romero and C. J. Carmona and O. Cord{\'o}n and M. J. del Jesus and S. Damas and  M. Chica},
+@article{ExplainingABM,
 title = {Explaining Agent-based Modeling Outputs Using Subgroup Discovery: A Case Study in Marketing},
 note = {Submited}}
 ```
