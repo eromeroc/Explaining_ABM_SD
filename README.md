@@ -4,6 +4,7 @@
 ## Overview
 
 This repository contains the necessary resources for the experimental part of the paper "Explaining Agent-based Modeling Outputs Using Subgroup Discovery: A Case Study in Marketing", including data, preprocessing scripts in R, and Java Archive (JAR) files for subgroup discovery algorithms. Convenient shell scripts are provided to facilitate the execution process.
+**Reproducibility Note:** The exact code version used to generate the results presented in the paper corresponds to the commit hash: a8614239b35383755b0662534288c5e65a562092
 
 ## Repository Structure
 
@@ -23,7 +24,7 @@ Prepare the data for subgroup discovery algorithms by employing the R scripts fo
 
 **Output:** After successful execution, the preprocessed data in ARFF will be available in the path `./data/in`.
 
-**Requirements:** Ensure that you have R installed on your system before running the preprocessing scripts.
+**Requirements:** Ensure that you have R installed on your system before running the preprocessing scripts. Please refer to the requirements.txt file for the exact R package versions used.
 
 ### Subgroup Discovery Algorithms
 
@@ -33,7 +34,7 @@ Before applying subgroup discovery algorithms, ensure that your data adheres to 
 
 **Output:** After successful execution, the output for each algorithm will be available in the path `./data/output/output_[algorithm]`.
 
-**Requirements:** Ensure that Java is installed on your system.\
+**Requirements:** A Java Runtime Environment (JRE) is required to execute the JAR files. \
 
 For more detailed information on the implementation of the subgroup discovery algorithms, you can consult [KEEL](http://www.keel.es)
 
