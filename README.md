@@ -4,6 +4,7 @@
 ## Overview
 
 This repository contains the necessary resources for the experimental part of the paper "Explaining Agent-based Modeling Outputs Using Subgroup Discovery: A Case Study in Marketing", including data, preprocessing scripts in R, and Java Archive (JAR) files for subgroup discovery algorithms. Convenient shell scripts are provided to facilitate the execution process.
+
 **Reproducibility Note:** The exact code version used to generate the results presented in the paper corresponds to the commit hash: a8614239b35383755b0662534288c5e65a562092
 
 ## Repository Structure
