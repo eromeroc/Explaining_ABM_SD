@@ -44,12 +44,14 @@ For more detailed information on the implementation of the subgroup discovery al
 To replicate the experiments, open your terminal in the root directory of this repository and run the following scripts in order:
 
 **1. Data Preprocessing**
+
 Generate the necessary ARFF files from the raw data:
 ```sh
 sh run_preprocessing.sh
 ```
 
 **2. Execute Subgroup Discovery Algorithms**
+
 Run the algorithms using the generated ARFF data:
 ```sh
 sh run_sdmap.sh
@@ -58,7 +60,8 @@ sh run_fugepsd.sh
 ```
 
 **3. Review the Outputs**
-Once the execution is complete, the final results will be available in their respective output folders under ./data/output/.
+
+Once the execution is complete, the final results will be available in their respective output folders under `./data/output/`
 
 
 ## Acknowledgments
