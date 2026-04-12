@@ -1,0 +1,7 @@
+R version 4.3.1
+
+Packages:
+data.table==1.14.8
+caret==6.0.94
+rlist==0.4.6.2
+arules==1.7.6
